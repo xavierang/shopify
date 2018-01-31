@@ -26,60 +26,44 @@
   padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
   transition: $global-transition;
   border-radius: $global-radius;
+  border: none;
 }
 
 /* Style variants
      ========================================================================== */
 
 .c-btn--primary {
-  background-color: #4a8ec2;
+  background-color: $celery;
+  color: $alabaster;
 
   &,
   &:hover,
   &:active,
   &:focus {
     text-decoration: none; /* [4] */
-    color: #fff;
   }
 
   &:hover,
   &:focus {
-    background-color: #3774a2;
+    background-color: $alabaster;
+    color: $tundora;
   }
 }
 
 .c-btn--secondary {
-  background-color: #2f4054;
+  background-color: $celery;
+  color: $alabaster;
 
   &,
   &:hover,
   &:active,
   &:focus {
     text-decoration: none;
-    color: #fff;
   }
 
   &:hover,
   &:focus {
-    background-color: #1d2733;
-  }
-}
-
-.c-btn--tertiary {
-  background-color: #fff;
-  color: #4a8ec2;
-
-  &,
-  &:hover,
-  &:active,
-  &:focus {
-    text-decoration: none;
-    color: #4a8ec2;
-  }
-
-  &:hover,
-  &:focus {
-    color: #3774a2;
+    background-color: $tundora;
   }
 }
 
@@ -150,5 +134,51 @@ $btn-ghost-border-width: 2px;
     &:focus {
       color: #fff;
     }
+  }
+}
+
+/* Button styled icons
+     ========================================================================== */
+
+.c-btn--icon {
+  background-color: transparent;
+  svg {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Size variants
+     ========================================================================== */
+
+.c-btn--icon-small {
+  background-color: transparent;
+  padding: 0;
+  svg {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+/* Style variants (dark and light backgrounds)
+     ========================================================================== */
+
+.c-btn--icon_darkbg {
+  fill: $celery;
+  color: $celery;
+  &:hover,
+  &:focus {
+    fill: $alabaster;
+    color: $alabaster;
+  }
+}
+
+.c-btn--icon_lightbg {
+  fill: $tundora;
+  color: $tundora;
+  &:hover,
+  &:focus {
+    fill: $celery;
+    color: $celery;
   }
 }
