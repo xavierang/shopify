@@ -1,9 +1,10 @@
 .c-share {
   display: flex;
+  @include inuit-font-size($font-size-p,$line-height-p);
 }
 
 .c-share__items {
   padding: 0;
   margin-right: 24px;
-  align-self: flex-end;
+  align-self: center;
 }
