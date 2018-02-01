@@ -145,11 +145,22 @@ $btn-ghost-border-width: 2px;
   svg {
     width: 32px;
     height: 32px;
+    display: block;
   }
 }
 
 /* Size variants
      ========================================================================== */
+
+.c-btn--icon-medium {
+  background-color: transparent;
+  padding: 0;
+  svg {
+    width: 26px;
+    height: 26px;
+    display: block;
+  }
+}
 
 .c-btn--icon-small {
   background-color: transparent;
@@ -157,6 +168,7 @@ $btn-ghost-border-width: 2px;
   svg {
     width: 9px;
     height: 9px;
+    display: block;
   }
 }
 
