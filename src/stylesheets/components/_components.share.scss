@@ -1,9 +1,9 @@
 .c-share {
   display: flex;
-  width: 168px;
-  justify-content: space-between;
 }
 
-.c-share--items {
+.c-share__items {
   padding: 0;
+  margin-right: 24px;
+  align-self: flex-end;
 }
