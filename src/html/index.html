@@ -25,20 +25,48 @@
 
         {% include "./shared/share.html" %}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1
         <div class="c-accordion">
-          <div class="c-accordion__button">
+          <div class="c-accordion__heading">
             <p>Footer Section 1</p>
-            <button class="">{{sprite("plus")}}</button>
+            <button class="c-btn c-btn--icon c-btn--icon-tiny c-btn--icon_darkbg c-accordion__icon">{{sprite("plus")}}</button>
           </div>
           <div class="c-accordion__panel">
-            <ul>
-              <li>Meet Shopify Light</li>
-              <li>Features</li>
-              <li>Another Link</li>
+            <ul class="o-list-bare c-accordion__panel_list">
+              <li class="o-list-bare__item">
+                <p class="c-accordion__panel_text">Meet Shopify Light</p>
+              </li>
+              <li class="o-list-bare__item">
+                <p class="c-accordion__panel_text">Features</p>
+              </li>
+              <li class="o-list-bare__item">
+                <p class="c-accordion__panel_text">Another Link</p>
+              </li>
             </ul>
           </div>
+        </div>
 
+        <div class="c-accordion">
+          <div class="c-accordion__heading">
+            <p>Contact</p>
+            <button class="c-btn c-btn--icon c-btn--icon-tiny c-btn--icon_darkbg c-accordion__icon">{{sprite("chev")}}</button>
+          </div>
+          <div class="c-accordion__panel-active">
+            <ul class="o-list-bare c-accordion__panel_list">
+              <li class="o-list-bare__item">
+                <p class="c-accordion__panel_text">Email Us</p>
+              </li>
+              <li class="o-list-bare__item">
+                <p class="c-accordion__panel_text">Phone</p>
+              </li>
+              <li class="o-list-bare__item">
+                <p class="c-accordion__panel_text">Facebook</p>
+              </li>
+            </ul>
+          </div>
         </div>
 
 

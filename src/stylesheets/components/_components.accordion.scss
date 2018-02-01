@@ -1,0 +1,29 @@
+.c-accordion {
+}
+
+.c-accordion__heading {
+  display: flex;
+  align-items: flex-start;
+  width: 140px;
+}
+
+.c-accordion__icon {
+  margin-left: auto;
+}
+
+.c-accordion__panel {
+  display: none;
+  overflow: hidden;
+}
+
+.c-accordion__panel_list {
+  margin-left: $inuit-global-spacing-unit;
+}
+
+.c-accordion__panel-active {
+  display: block;
+}
+
+.c-accordion__panel_text {
+  color: $celery;
+}
