@@ -143,8 +143,6 @@ $btn-ghost-border-width: 2px;
 .c-btn--icon {
   background-color: transparent;
   svg {
-    width: 32px;
-    height: 32px;
     display: block;
   }
 }
@@ -152,23 +150,35 @@ $btn-ghost-border-width: 2px;
 /* Size variants
      ========================================================================== */
 
-.c-btn--icon-medium {
-  background-color: transparent;
-  padding: 0;
+$icon-size-tiny: 9px;
+$icon-size-small: 26px;
+$icon-size-large: 40px;
+$icon-size-huge: 57px;
+
+.c-btn--icon-tiny {
   svg {
-    width: 26px;
-    height: 26px;
-    display: block;
+    width: $icon-size-tiny;
+    height: $icon-size-tiny;
+  }
+}
+.c-btn--icon-small {
+  svg {
+    width: $icon-size-small;
+    height: $icon-size-small;
   }
 }
 
-.c-btn--icon-small {
-  background-color: transparent;
-  padding: 0;
+.c-btn--icon-large {
   svg {
-    width: 9px;
-    height: 9px;
-    display: block;
+    width: $icon-size-large;
+    height: $icon-size-large;
+  }
+}
+
+.c-btn--icon-huge {
+  svg {
+    width: $icon-size-huge;
+    height: $icon-size-huge;
   }
 }
 

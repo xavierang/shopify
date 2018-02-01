@@ -1,8 +1,9 @@
 .c-share {
   display: flex;
+  width: 168px;
+  justify-content: space-between;
 }
 
 .c-share--items {
   padding: 0;
-  flex: 1;
 }
