@@ -1,0 +1,75 @@
+/* ==========================================================================
+   #ICONS
+   ========================================================================== */
+
+.c-icon {
+  vertical-align: middle;
+  font: inherit;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+  transition: $global-transition;
+  border: none;
+  background-color: transparent;
+  svg {
+    display: block;
+  }
+}
+
+/* Size variants
+           ========================================================================== */
+
+$icon-size-tiny: 9px;
+$icon-size-small: 26px;
+$icon-size-large: 40px;
+$icon-size-huge: 57px;
+
+.c-icon--tiny {
+  svg {
+    width: $icon-size-tiny;
+    height: $icon-size-tiny;
+  }
+}
+.c-icon--small {
+  svg {
+    width: $icon-size-small;
+    height: $icon-size-small;
+  }
+}
+
+.c-icon--large {
+  svg {
+    width: $icon-size-large;
+    height: $icon-size-large;
+  }
+}
+
+.c-icon--huge {
+  svg {
+    width: $icon-size-huge;
+    height: $icon-size-huge;
+  }
+}
+
+/* Style variants (dark and light backgrounds)
+           ========================================================================== */
+
+.c-icon--darkbg {
+  fill: $celery;
+  color: $celery;
+  &:hover,
+  &:focus {
+    fill: $alabaster;
+    color: $alabaster;
+  }
+}
+
+.c-icon--lightbg {
+  fill: $tundora;
+  color: $tundora;
+  &:hover,
+  &:focus {
+    fill: $celery;
+    color: $celery;
+  }
+}
