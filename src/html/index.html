@@ -3,7 +3,7 @@
 <div class="o-wrapper">
   <div class="o-layout">
     <div class="o-layout__item">
-      <h1 data-module="example">{{ message }}</h1>
+      <!-- <h1 data-module="example">{{ message }}</h1>
       <h2 data-module="example">{{ message }}</h2>
       <h3 data-module="example">{{ message }}</h3>
       <p data-module="example">{{ message }}</p>
@@ -21,93 +21,68 @@
 
       <div style="background-color:#fbfbfb; padding:10px; height:auto">
         <button class="c-btn  c-btn--secondary">Register</button>
-        <button class="c-icon  c-icon--huge  c-icon--lightbg">{{sprite("play")}}</button>
+        <button class="c-icon  c-icon--huge  c-icon--lightbg">{{sprite("play")}}</button> -->
+      <br> {% include "./shared/share.html" %}
+      <br>
 
-        {% include "./shared/share.html" %}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-=======
->>>>>>> 1
-        <div class="c-accordion">
-=======
-        <!-- <div class="c-accordion">
->>>>>>> 2
-          <div class="c-accordion__heading">
-            <p>Footer Section 1</p>
-            <button class="c-btn c-btn--icon c-btn--icon-tiny c-btn--icon_darkbg c-accordion__icon">{{sprite("plus")}}</button>
-          </div>
-          <div class="c-accordion__panel">
-            <ul class="o-list-bare c-accordion__panel_list">
-              <li class="o-list-bare__item">
-                <p class="c-accordion__panel_text">Meet Shopify Light</p>
-              </li>
-              <li class="o-list-bare__item">
-                <p class="c-accordion__panel_text">Features</p>
-              </li>
-              <li class="o-list-bare__item">
-                <p class="c-accordion__panel_text">Another Link</p>
-              </li>
+      <div class="o-layout">
+        <div class="o-layout__item  u-1/4@tablet">
+          <div class="c-accordion">
+            <label class="c-accordion__header">
+              Footer Section 1 {{ sprite("plus", "0 0 1 1", "c-icon c-icon--tiny c-icon--darkbg c-accordion__icon") }}
+            </label>
+            <ul class="o-list-bare  c-accordion__list isCollapsed">
+              <li class="o-list-bare__item c-accordion__panel_text">Meet Shopify Light</li>
+              <li class="o-list-bare__item c-accordion__panel_text">Features</li>
+              <li class="o-list-bare__item c-accordion__panel_text">Another Link</li>
             </ul>
           </div>
         </div>
 
-        <div class="c-accordion">
-          <div class="c-accordion__heading">
-            <p>Contact</p>
-            <button class="c-btn c-btn--icon c-btn--icon-tiny c-btn--icon_darkbg c-accordion__icon">{{sprite("chev")}}</button>
-          </div>
-          <div class="c-accordion__panel-active">
-            <ul class="o-list-bare c-accordion__panel_list">
-              <li class="o-list-bare__item">
-                <p class="c-accordion__panel_text">Email Us</p>
-              </li>
-              <li class="o-list-bare__item">
-                <p class="c-accordion__panel_text">Phone</p>
-              </li>
-              <li class="o-list-bare__item">
-                <p class="c-accordion__panel_text">Facebook</p>
-              </li>
+        <div class="o-layout__item  u-1/4@tablet">
+          <div class="c-accordion">
+            <label class="c-accordion__header">
+              Footer Section 2 {{ sprite("plus", "0 0 1 1", "c-icon c-icon--tiny c-icon--darkbg c-accordion__icon") }}
+            </label>
+            <ul class="o-list-bare  c-accordion__list isCollapsed">
+              <li class="o-list-bare__item c-accordion__panel_text">Meet Shopify Light</li>
+              <li class="o-list-bare__item c-accordion__panel_text">Features</li>
+              <li class="o-list-bare__item c-accordion__panel_text">Another Link</li>
             </ul>
           </div>
-        </div> -->
-
-
-        <div class="c-accordion">
-          <ul class="o-list-bare">
-            <li class="o-list-bare__item">
-              <div class="c-accordion__heading">
-                <p>Footer Section 1</p>
-                <button class="c-icon c-icon--tiny c-icon--darkbg c-accordion__icon">{{sprite("plus")}}</button>
-              </div>
-              <div class="c-accordion__panel">
-                <ul class="o-list-bare c-accordion__panel_list">
-                  <li class="o-list-bare__item">
-                    <p class="c-accordion__panel_text">Meet Shopify Light</p>
-                  </li>
-                  <li class="o-list-bare__item">
-                    <p class="c-accordion__panel_text">Features</p>
-                  </li>
-                  <li class="o-list-bare__item">
-                    <p class="c-accordion__panel_text">Another Link</p>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="o-list-bare__item">Footer Section 2</li>
-            <li class="o-list-bare__item">Footer Section 3</li>
-            <li class="o-list-bare__item">Contact</li>
-          </ul>
         </div>
 
+        <div class="o-layout__item  u-1/4@tablet">
+          <div class="c-accordion">
+            <label class="c-accordion__header">
+              Footer Section 3 {{ sprite("plus", "0 0 1 1", "c-icon c-icon--tiny c-icon--darkbg c-accordion__icon") }}
+            </label>
+            <ul class="o-list-bare  c-accordion__list isCollapsed">
+              <li class="o-list-bare__item c-accordion__panel_text">Meet Shopify Light</li>
+              <li class="o-list-bare__item c-accordion__panel_text">Features</li>
+              <li class="o-list-bare__item c-accordion__panel_text">Another Link</li>
+            </ul>
+          </div>
+        </div>
 
-
-
+        <div class="o-layout__item  u-1/4@tablet">
+          <div class="c-accordion">
+            <label class="c-accordion__header">
+              Contact {{ sprite("chev", "0 0 1 1", "c-icon c-icon--tiny c-icon--darkbg c-accordion__icon") }}
+            </label>
+            <ul class="o-list-bare  c-accordion__list">
+              <li class="o-list-bare__item c-accordion__panel_text">Email Us</li>
+              <li class="o-list-bare__item c-accordion__panel_text">Phone</li>
+              <li class="o-list-bare__item c-accordion__panel_text">Facebook</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
     </div>
+
   </div>
+</div>
 
 
 </div>
