@@ -11,7 +11,7 @@
     display: block;
     position: absolute;
     height: 1px;
-    background: $alto;
+    background-color: $alto;
     width: 100%;
     left: 0;
     bottom: 0;
@@ -22,8 +22,8 @@
   padding: 0;
   margin-right: 24px;
   align-self: center;
-  @include mq ($from: tablet) {
-    svg {
+  svg {
+    @include mq ($from: tablet) {
       width: $icon-size-medium;
       height: $icon-size-medium;
     }
