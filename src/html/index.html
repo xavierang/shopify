@@ -3,35 +3,33 @@
 <div class="o-wrapper">
   <div class="o-layout">
     <div class="o-layout__item">
-      <h1 data-module="example">{{ message }}</h1>
-      <h2 data-module="example">{{ message }}</h2>
-      <h3 data-module="example">{{ message }}</h3>
-      <p data-module="example">{{ message }}</p>
 
-      <div style="background-color:#4a4a4a; padding:10px; height:auto">
-        <button class="c-btn  c-btn--primary">Register</button>
-        <button class="c-icon  c-icon--huge  c-icon--darkbg">{{sprite("play")}}</button>
+      {% include "./shared/share.html" %}
 
-        <div class="c-watch">
-          <button class="c-watch--btn  c-icon  c-icon--small  c-icon--darkbg">{{sprite("play")}}
-            <span class="c-watch--text">watch the video</span>
-          </button>
-        </div>
-      </div>
-
-      <div style="background-color:#fbfbfb; padding:10px; height:auto">
-        <button class="c-btn  c-btn--secondary">Register</button>
-        <button class="c-icon  c-icon--huge  c-icon--lightbg">{{sprite("play")}}</button>
-
-        {% include "./shared/share.html" %}
-
-
-      </div>
 
     </div>
   </div>
 
 
+
+
 </div>
+
+<nav class="c-footer-bottom">
+  <div class="o-wrapper">
+    <ul class="o-list-bare o-list-inline">
+      <li class="o-list-bare__item o-list-inline__item c-footer-bottom--item">
+        <a class="c-text--reset" href="#" target="_blank">About</a>
+      </li>
+      <li class="o-list-bare__item o-list-inline__item c-footer-bottom--item">
+        <a class="c-text--reset" href="# " target="_blank">Privacy</a>
+      </li>
+      <li class="o-list-bare__item o-list-inline__item c-footer-bottom--item">
+        <a class="c-text--reset" href="# " target="_blank">Terms</a>
+      </li>
+    </ul>
+  </div>
+
+</nav>
 
 {% endblock %}

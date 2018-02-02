@@ -1,0 +1,24 @@
+.c-footer-bottom {
+  margin-top: $inuit-global-spacing-unit-tiny;
+  background-color: $celery;
+
+  @include mq ($from: tablet) {
+    margin-top: $inuit-global-spacing-unit-huge;
+  }
+  //   a {
+  //     text-decoration: none;
+  //     color: $white;
+  //     @include inuit-font-size($font-size-p,$line-height-p);
+  //   }
+}
+
+.c-footer-bottom--item {
+  color: $white;
+  font-size: 10px;
+  margin-right: $inuit-global-spacing-unit;
+  padding: 12px 0;
+
+  @include mq($from:tablet) {
+    @include inuit-font-size($font-size-p,$line-height-p);
+  }
+}
