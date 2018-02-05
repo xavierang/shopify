@@ -1,3 +1,74 @@
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include mq($from:tablet) {
+    justify-content: flex-end;
+  }
+
+  &.is-scroll {
+    > .c-header__icon {
+      fill: $tundora;
+    }
+
+    > .c-header__logo {
+      background: url("../images/logo-lightbg.png") no-repeat;
+    }
+
+    > .c-header__nav {
+      color: $tundora;
+    }
+  }
+}
+
 .c-header__logo {
-  //   background-image: url("../images/logo-darkbg.png");
+  width: 127px;
+  height: 33px;
+  background: url("../images/logo-darkbg.png") no-repeat;
+  @include mq($from:tablet) {
+    margin-right: auto;
+  }
+}
+
+.c-header__icon {
+  fill: $white;
+  margin-left: $inuit-global-spacing-unit;
+  @include mq($from:tablet) {
+    display: none;
+  }
+}
+
+.c-header__btn {
+  margin: $inuit-global-spacing-unit;
+  margin-left: 0px;
+}
+
+.c-header__nav {
+  display: none;
+  color: $white;
+  @include mq($from:tablet) {
+    display: inline-block;
+  }
+}
+
+.c-header__nav-list {
+  margin: 0;
+}
+
+.c-header__nav-items {
+  margin-right: $inuit-global-spacing-unit-large;
+  > a {
+    text-decoration: none;
+    color: inherit;
+    @include inuit-font-size($font-size-p,$line-height-p);
+    &:hover,
+    &:focus {
+      color: $celery;
+    }
+
+    &:active {
+      text-decoration: underline;
+      color: inherit;
+    }
+  }
 }

@@ -1,0 +1,47 @@
+.c-overlay {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-color: $black;
+  padding: $inuit-global-spacing-unit-large $inuit-global-spacing-unit;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.c-overlay__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-overlay__nav {
+  margin-top: $inuit-global-spacing-unit-large;
+}
+
+.c-overlay__nav-items {
+  position: relative;
+  padding-top: $inuit-global-spacing-unit-small;
+  padding-bottom: $inuit-global-spacing-unit-small;
+  > a {
+    color: $white;
+    text-decoration: none;
+    @include inuit-font-size($font-size-p,$line-height-p);
+    &:hover,
+    &:focus {
+      color: $celery;
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    background-color: $white;
+    opacity: 0.2;
+    width: 80%;
+    left: 0;
+    bottom: 0;
+  }
+}
