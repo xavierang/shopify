@@ -5,8 +5,8 @@
   background-position: left 110%;
   background-size: 220% 75%;
   @include mq ($from: tablet) {
-    background-position: left bottom;
-    background-size: 100% 101%;
+    background-position: bottom;
+    background-size: 100%;
   }
 }
 
