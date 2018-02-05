@@ -1,10 +1,11 @@
 {# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #}
-{% extends 'layouts/application.html' %} {% block content %} {% include "./shared/introduction.html" %}
+{% extends 'layouts/application.html' %} {% block content %} {% include "./shared/introduction.html" %} {% include "./shared/menu.html"
+%}
 
 <div class="o-wrapper">
   <div class="o-layout">
     <div class="o-layout__item">
-
+      {% include "./shared/header.html" %}
       <br> {% include "./shared/share.html" %}
       <br> {% include "./shared/accordion.html" %}
 
@@ -12,21 +13,4 @@
   </div>
 </div>
 
-<nav class="c-footer-bottom">
-  <div class="o-wrapper">
-    <ul class="o-list-bare o-list-inline">
-      <li class="o-list-bare__item o-list-inline__item c-footer-bottom__item">
-        <a href="#" target="_blank">About</a>
-      </li>
-      <li class="o-list-bare__item o-list-inline__item c-footer-bottom__item">
-        <a href="# " target="_blank">Privacy</a>
-      </li>
-      <li class="o-list-bare__item o-list-inline__item c-footer-bottom__item">
-        <a href="# " target="_blank">Terms</a>
-      </li>
-    </ul>
-  </div>
-
-</nav>
-
-{% endblock %}
+{% include "./shared/footer.html" %} {% endblock %}
