@@ -4,8 +4,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 690px;
-  width: 100%;
-  position: relative;
   @include mq($from:tablet) {
     background-image: url("../images/hero-desktop.png");
     height: 600px;
@@ -13,13 +11,9 @@
 }
 
 .c-hero__text {
-  position: absolute;
-  top: 128px;
-  margin-right: 41px;
+  padding: 128px 21px 0 12px;
   @include mq($from:tablet) {
-    top: 164px;
-    width: 320px;
-    margin-right: 0;
+    padding: 165px 0 0 0;
   }
   h1,
   p {
