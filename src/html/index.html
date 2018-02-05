@@ -1,5 +1,17 @@
 {# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #}
 {% extends 'layouts/application.html' %} {% block content %}
+
+<div class="c-video">
+  <div class="o-wrapper">
+    <div class="o-layout">
+      <div class="o-layout__item">
+        <div class="c-video__btn  c-icon  c-icon--huge  c-icon--darkbg">{{sprite("play")}}</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 <div class="o-wrapper">
   <div class="o-layout">
     <div class="o-layout__item">
@@ -25,7 +37,6 @@
       </li>
     </ul>
   </div>
-
 </nav>
 
 {% endblock %}
