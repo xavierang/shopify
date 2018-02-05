@@ -55,6 +55,7 @@
 // @import 'inuitcss/objects/objects.table';
 @import "inuitcss/objects/objects.wrapper";
 @import "objects/objects.flex";
+@import "objects/objects.panel";
 
 // ==========================================================================||
 //  Components
@@ -67,6 +68,10 @@
 @import "components/components.footer";
 @import "components/components.accordion";
 @import "components/components.video";
+@import "components/components.intro";
+@import "components/components.header";
+@import "components/components.overlay";
+@import "components/components.logo";
 
 // ==========================================================================||
 //  Utilities

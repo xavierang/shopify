@@ -20,6 +20,7 @@
            ========================================================================== */
 
 $icon-size-tiny: 9px;
+$icon-size-vsmall: 18px;
 $icon-size-small: 26px;
 $icon-size-medium: 32px;
 $icon-size-large: 40px;
@@ -31,6 +32,14 @@ $icon-size-huge: 57px;
     height: $icon-size-tiny;
   }
 }
+
+.c-icon--vsmall {
+  svg {
+    width: $icon-size-vsmall;
+    height: $icon-size-vsmall;
+  }
+}
+
 .c-icon--small {
   svg {
     width: $icon-size-small;
@@ -68,6 +77,16 @@ $icon-size-huge: 57px;
 .c-icon--lightbg {
   fill: $tundora;
   color: $tundora;
+  &:hover,
+  &:focus {
+    fill: $celery;
+    color: $celery;
+  }
+}
+
+.c-icon--white {
+  fill: $white;
+  color: $white;
   &:hover,
   &:focus {
     fill: $celery;
