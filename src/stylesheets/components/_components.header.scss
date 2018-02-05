@@ -1,36 +1,43 @@
 .c-header {
   display: flex;
+  background-color: $white;
   justify-content: space-between;
   align-items: center;
+  padding: 10px $inuit-global-spacing-unit;
   @include mq($from:tablet) {
     justify-content: flex-end;
   }
 
-  &.is-scroll {
+  &.is-transparent {
+    position: fixed;
+    background-color: transparent;
+    max-width: 1024px;
+    top: 0;
+    width: 100%;
     > .c-header__icon {
-      fill: $tundora;
+      fill: $white;
     }
 
     > .c-header__logo {
-      content: url("../images/logo-lightbg.png");
+      svg {
+        fill: $white;
+      }
     }
 
     > .c-header__nav {
-      color: $tundora;
+      color: $white;
     }
   }
 }
 
 .c-header__logo {
-  width: 127px;
-  height: 33px;
   @include mq($from:tablet) {
     margin-right: auto;
   }
 }
 
 .c-header__icon {
-  fill: $white;
+  fill: $tundora;
   margin-left: $inuit-global-spacing-unit;
   @include mq($from:tablet) {
     display: none;
@@ -44,7 +51,7 @@
 
 .c-header__nav {
   display: none;
-  color: $white;
+  color: $tundora;
   margin: 0;
   @include mq($from:tablet) {
     display: inline-block;
@@ -67,4 +74,11 @@
       color: inherit;
     }
   }
+}
+
+.temp {
+  background-image: url("../images/desktop-hero.png");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
