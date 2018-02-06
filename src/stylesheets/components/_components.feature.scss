@@ -28,6 +28,7 @@
 }
 
 .c-feature__image {
+  text-align: center;
   width: 235px;
   height: 259px;
   @include mq($from:tablet) {

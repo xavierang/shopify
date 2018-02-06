@@ -54,7 +54,6 @@
 // @import 'inuitcss/objects/objects.ratio';
 // @import 'inuitcss/objects/objects.table';
 @import "inuitcss/objects/objects.wrapper";
-@import "objects/objects.flex";
 
 // ==========================================================================||
 //  Components
@@ -82,7 +81,7 @@
 // @import "inuitcss/utilities/utilities.responsive-spacings";
 // @import "inuitcss/utilities/utilities.spacings";
 @import "inuitcss/utilities/utilities.widths";
-// @import "utilities/utilities.alignments";
+@import "utilities/utilities.alignments";
 // @import "utilities/utilities.bg-colors";
 // @import "utilities/utilities.floats";
 @import "utilities/utilities.showhide";
