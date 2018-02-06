@@ -17,6 +17,7 @@
 @import "inuitcss/tools/tools.clearfix";
 @import "inuitcss/tools/tools.hidden";
 @import "sass-mq/mq";
+@import "swiper/dist/css/swiper.min";
 
 // ==========================================================================||
 //  Generic
@@ -70,7 +71,7 @@
 @import "components/components.header";
 @import "components/components.overlay";
 @import "components/components.logo";
-
+@import "components/components.swiper";
 
 // ==========================================================================||
 //  Utilities
