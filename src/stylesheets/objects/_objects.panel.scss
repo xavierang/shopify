@@ -1,8 +1,13 @@
-.o-panel {
-  padding: 64px 12px;
-  height: 624px;
+.o-panel--intro {
+  padding: 64px 12px 220px;
   @include mq ($from: tablet) {
-    padding: 95px 0 0 0;
-    height: 800px;
+    padding: 95px 0 425px 0;
+  }
+}
+
+.o-panel--video {
+  padding: 140px 0;
+  @include mq ($from: tablet) {
+    padding: 275px 0;
   }
 }

@@ -1,32 +1,35 @@
 .c-header {
-  display: flex;
+  z-index: 1;
+  position: fixed;
   background-color: $white;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px $inuit-global-spacing-unit;
-  @include mq($from:tablet) {
-    justify-content: flex-end;
-  }
-
+  top: 0;
+  left: 0;
+  right: 0;
   &.is-transparent {
-    position: fixed;
     background-color: transparent;
-    max-width: 1024px;
-    top: 0;
-    width: 100%;
-    > .c-header__icon {
+    .c-header__icon {
       fill: $white;
     }
 
-    > .c-header__logo {
+    .c-header__logo {
       svg {
         fill: $white;
       }
     }
 
-    > .c-header__nav {
+    .c-header__nav {
       color: $white;
     }
+  }
+}
+
+.c-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  @include mq($from:tablet) {
+    justify-content: flex-end;
   }
 }
 
@@ -55,6 +58,9 @@
   margin: 0;
   @include mq($from:tablet) {
     display: inline-block;
+  }
+  > ul {
+    margin-bottom: 0;
   }
 }
 

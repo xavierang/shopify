@@ -6,14 +6,7 @@
   background-size: 220% 75%;
   @include mq ($from: tablet) {
     background-position: bottom;
-    background-size: 100%;
-  }
-}
-
-.c-intro__logo {
-  display: none;
-  @include mq ($from: tablet) {
-    display: inline-block;
+    background-size: cover;
   }
 }
 

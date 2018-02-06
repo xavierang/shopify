@@ -1,24 +1,14 @@
 {# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #}
+{% extends 'layouts/application.html' %} {% block content %} {% include "./shared/menu.html" %} {% include "./shared/header.html"%}
+{% include "./shared/hero.html" %} {% include "./shared/introduction.html" %}
 
-{% extends 'layouts/application.html' %} {% block content %} {% include "./shared/introduction.html" %} {% include "./shared/menu.html"
-%}
+{% include "./shared/feature.html" %}
 
-{% include "./shared/hero.html" %}
-
-
-<div class="o-wrapper">
-  <div class="o-layout">
-    <div class="o-layout__item">
-
-      {% include "./shared/header.html" %} {% include "./shared/feature.html" %}
-
-
-
-      <br> {% include "./shared/share.html" %}
-      <br> {% include "./shared/accordion.html" %}
-
-    </div>
+<div class="c-video">
+  <div class="o-panel--video">
+    <button class="c-video__btn  c-icon  c-icon--huge  c-icon--darkbg">{{sprite("play")}}</button>
   </div>
 </div>
+
 
 {% include "./shared/footer.html" %} {% endblock %}

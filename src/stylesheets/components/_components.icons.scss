@@ -93,3 +93,12 @@ $icon-size-huge: 57px;
     color: $celery;
   }
 }
+
+.c-icon--watch {
+  display: flex;
+  background-color: transparent;
+  padding: $inuit-global-spacing-unit-tiny 0;
+  > span:last-child {
+    margin-left: 10px;
+  }
+}
