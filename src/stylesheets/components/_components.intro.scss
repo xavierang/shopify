@@ -10,13 +10,6 @@
   }
 }
 
-.c-intro__logo {
-  display: none;
-  @include mq ($from: tablet) {
-    display: inline-block;
-  }
-}
-
 .c-intro__text h2 {
   color: $black;
   position: relative;
