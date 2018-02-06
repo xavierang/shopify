@@ -1,5 +1,15 @@
 .c-video {
-  background-image: url("../images/video.png");
+  background-image: url("../images/video-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  @include mq ($from: tablet) {
+    background-image: url("../images/video-desktop.png");
+  }
+}
+
+.c-video__btn {
+  vertical-align: center;
 }
