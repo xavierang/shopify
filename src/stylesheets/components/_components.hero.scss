@@ -1,0 +1,22 @@
+.c-hero {
+  background-image: url("../images/hero-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 690px;
+  @include mq($from:tablet) {
+    background-image: url("../images/hero-desktop.png");
+    height: 600px;
+  }
+}
+
+.c-hero__text {
+  padding: 128px 21px 0 12px;
+  @include mq($from:tablet) {
+    padding: 165px 0 0 0;
+  }
+  h1,
+  p {
+    color: $white;
+  }
+}
