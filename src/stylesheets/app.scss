@@ -69,6 +69,7 @@
 @import "components/components.header";
 @import "components/components.overlay";
 @import "components/components.logo";
+@import "components/components.feature";
 
 // ==========================================================================||
 //  Utilities
@@ -84,6 +85,6 @@
 // @import "utilities/utilities.alignments";
 // @import "utilities/utilities.bg-colors";
 // @import "utilities/utilities.floats";
-// @import "utilities/utilities.showhide";
+@import "utilities/utilities.showhide";
 // @import "utilities/utilities.misc";
 // @import "utilities/utilities.typography";
