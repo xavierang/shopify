@@ -50,10 +50,8 @@ $swiper-height-desktop: 143px;
 
 .c-swiper__header {
   text-align: center;
-  h1 {
-    color: $black;
-    font-size: 20px;
-  }
+  color: $black;
+  font-size: 20px;
 }
 
 .c-swiper__content {
@@ -61,15 +59,16 @@ $swiper-height-desktop: 143px;
     width: $swiper-width;
     height: $swiper-height-desktop;
   }
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  p {
-    text-align: center;
-  }
 }
 
 .c-swiper--desktop {
-  display: flex;
-  justify-content: space-around;
+  display: none;
+  @include mq($from:tablet) {
+    display: flex;
+    justify-content: space-around;
+  }
 }

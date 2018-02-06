@@ -12,11 +12,8 @@
 
 .c-hero__text {
   padding: 128px 21px 0 12px;
+  color: $white !important;
   @include mq($from:tablet) {
     padding: 165px 0 0 0;
-  }
-  h1,
-  p {
-    color: $white;
   }
 }
