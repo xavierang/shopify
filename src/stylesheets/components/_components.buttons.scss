@@ -19,7 +19,7 @@
 .c-btn {
   display: inline-block; /* [1] */
   vertical-align: middle; /* [2] */
-  font: inherit; /* [3] */
+  @include inuit-font-size($font-size-p,$line-height-p);
   text-align: center; /* [4] */
   margin: 0; /* [4] */
   cursor: pointer; /* [5] */
