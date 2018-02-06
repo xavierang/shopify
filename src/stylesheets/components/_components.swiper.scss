@@ -1,7 +1,12 @@
 //overwrite default swiper styling by iDangerous
+
+$swiper-width: 236px;
+$swiper-height: 180px;
+$swiper-height-desktop: 143px;
+
 .swiper-container {
-  width: 240px;
-  height: 180px;
+  width: $swiper-width;
+  height: $swiper-height;
 }
 
 .swiper-pagination {
@@ -33,9 +38,9 @@
   background-size: 275% 85%;
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   @include mq ($from: tablet) {
     background-position: center;
     background-size: cover;
@@ -44,6 +49,7 @@
 }
 
 .c-swiper__header {
+  text-align: center;
   h1 {
     color: $black;
     font-size: 20px;
@@ -51,10 +57,19 @@
 }
 
 .c-swiper__content {
+  @include mq($from:tablet) {
+    width: $swiper-width;
+    height: $swiper-height-desktop;
+  }
   display: flex;
   flex-direction: column;
   align-items: center;
   p {
     text-align: center;
   }
+}
+
+.c-swiper--desktop {
+  display: flex;
+  justify-content: space-around;
 }
