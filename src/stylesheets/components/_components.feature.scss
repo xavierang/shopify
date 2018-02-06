@@ -1,4 +1,11 @@
 //make this into object panel?
+.c-feature {
+  padding: 64px 0 20px 0;
+  @include mq($from:tablet) {
+    padding: 96px 0 162px 0;
+  }
+}
+
 .c-feature__content {
   padding: 24px 68px 0 0;
   @include mq($from:tablet) {
@@ -28,7 +35,6 @@
 }
 
 .c-feature__image {
-  text-align: center;
   width: 235px;
   height: 259px;
   @include mq($from:tablet) {
