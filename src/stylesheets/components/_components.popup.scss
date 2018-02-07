@@ -1,11 +1,31 @@
 .c-popup {
-  z-index: 20;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
   background-color: $tundora;
-  padding: 33px 0 33px 0;
 }
 
 .c-popup__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: $white;
   box-shadow: 0 0 4px $ebony-clay;
   padding: 40px 25% 62px 25%;
+  margin-top: 50px;
+}
+
+.c-popup__share {
+  margin-top: 31px;
+  display: flex;
+  justify-content: center;
+}
+
+.c-popup__btn {
+  position: absolute;
+  top: 16px;
+  right: 10px;
 }
