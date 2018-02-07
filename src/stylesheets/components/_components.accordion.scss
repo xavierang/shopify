@@ -1,4 +1,9 @@
 .c-accordion {
+  padding-top: $inuit-global-spacing-unit;
+  margin-left: -$inuit-global-spacing-unit;
+  @include mq($from:tablet) {
+    padding-top: 27px;
+  }
 }
 
 .c-accordion__header {

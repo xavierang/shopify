@@ -20,6 +20,16 @@
     .c-header__nav {
       color: $white;
     }
+
+    .c-header__btn {
+      background-color: $celery;
+      color: $alabaster;
+      &:hover,
+      &:focus {
+        background-color: $alabaster;
+        color: $tundora;
+      }
+    }
   }
 }
 
