@@ -17,6 +17,7 @@
 @import "inuitcss/tools/tools.clearfix";
 @import "inuitcss/tools/tools.hidden";
 @import "sass-mq/mq";
+@import "swiper/dist/css/swiper.min";
 
 // ==========================================================================||
 //  Generic
@@ -54,7 +55,6 @@
 // @import 'inuitcss/objects/objects.ratio';
 // @import 'inuitcss/objects/objects.table';
 @import "inuitcss/objects/objects.wrapper";
-
 @import "objects/objects.panel";
 
 
@@ -73,6 +73,7 @@
 @import "components/components.header";
 @import "components/components.menu";
 @import "components/components.logo";
+@import "components/components.swiper";
 @import "components/components.feature";
 
 // ==========================================================================||

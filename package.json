@@ -7,7 +7,8 @@
   "author": "xavierang <sgtxav@gmail.com>",
   "dependencies": {
     "blendid": "^4.4.2",
-    "inuitcss": "^6.0.0-beta.5"
+    "inuitcss": "^6.0.0-beta.5",
+    "swiper": "^4.1.0"
   },
   "devDependencies": {
     "eslint": "^4.9.0",

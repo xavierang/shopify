@@ -94,6 +94,12 @@ $icon-size-huge: 57px;
   }
 }
 
+.c-icon--static {
+  cursor: default;
+  fill: $celery;
+  color: $celery;
+}
+
 .c-icon--watch {
   display: flex;
   background-color: transparent;
