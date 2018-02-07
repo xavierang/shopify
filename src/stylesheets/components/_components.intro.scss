@@ -1,0 +1,50 @@
+.c-intro {
+  background-color: $wild-sand;
+  background-image: url("../images/introduction.png");
+  background-repeat: no-repeat;
+  background-position: left 110%;
+  background-size: 220% 75%;
+  @include mq ($from: tablet) {
+    background-position: bottom;
+    background-size: cover;
+  }
+}
+
+.c-intro__text h2 {
+  color: $black;
+  position: relative;
+  @include mq ($from: tablet) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  &::before {
+    content: "";
+    height: 60px;
+    width: 2px;
+    background-color: $celery;
+    position: absolute;
+    top: 0;
+    left: -13px;
+    @include mq ($from: tablet) {
+      left: -86px;
+    }
+  }
+}
+
+.c-intro__text p {
+  @include mq ($from: tablet) {
+    font-size: 14px;
+  }
+}
+
+.c-intro__list_items {
+  @include inuit-font-size($font-size-p,$line-height-p);
+  color: $tundora;
+  font-weight: 600;
+  &::before {
+    content: "- ";
+  }
+  @include mq ($from: tablet) {
+    font-size: 14px;
+  }
+}
