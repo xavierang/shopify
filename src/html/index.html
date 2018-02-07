@@ -1,6 +1,13 @@
 {# Nunjucks Templating! Homepage: https://mozilla.github.io/nunjucks/ Docs: https://mozilla.github.io/nunjucks/api.html #}
-{% extends 'layouts/application.html' %} {% block content %} {% include "./shared/hero.html" %} {% include "./shared/menu.html"
-%} {% include "./shared/swiper.html" %}
+{% extends 'layouts/application.html' %}
+
+{% block content %} 
+
+{% include "./shared/hero.html" %} 
+
+{% include "./shared/menu.html" %} 
+
+{% include "./shared/swiper.html" %}
 
 <div class="o-wrapper">
   <div class="o-layout">
@@ -19,4 +26,6 @@
   </div>
 </div>
 
-{% include "./shared/footer.html" %} {% endblock %}
+{% include "./shared/footer.html" %} 
+
+{% endblock %}

@@ -2,7 +2,7 @@
 
 $swiper-width: 236px;
 $swiper-height: 180px;
-$swiper-height-desktop: 143px;
+$swiper-height-desktop: 155px;
 
 .swiper-container {
   width: $swiper-width;
@@ -59,6 +59,7 @@ $swiper-height-desktop: 143px;
     width: $swiper-width;
     height: $swiper-height-desktop;
   }
+  color: $tundora;
   text-align: center;
   display: flex;
   flex-direction: column;
