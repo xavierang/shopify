@@ -1,17 +1,11 @@
-<div class="c-popup">
-    <div class="o-wrapper">
-        <div class="o-layout">
-            <div class="o-layout__item  u-push-2/12@tablet  u-8/12@tablet">
-                <div class="c-popup__wrapper u-text-center">
-                    <h1>Awesome!</h1>
-                    <p>Lorem ipsum dolor sit amet.Consectetur adipiscing elit, 
-                        sed do eiusmod tempor inci didunt ut labore et dolore magna.</p>
-                        <div class="c-popup__share">
-                            {% include "./share.html" %}
-                        </div>
-                    <button class="c-popup__btn  c-icon  c-icon--tiny  c-icon--lightbg">{{sprite("cross")}}</button>
-                </div>
-            </div>
+<div class="c-popup  is-active">
+    <div class="c-popup__wrapper u-text-center">
+        <h1>Awesome!</h1>
+        <p>Lorem ipsum dolor sit amet.Consectetur adipiscing elit, 
+            sed do eiusmod tempor inci didunt ut labore et dolore magna.</p>
+        <div class="c-popup__share">
+            {% include "./share.html" %}
         </div>
-    </div>
+        <button class="c-popup__btn  c-icon  c-icon--tiny  c-icon--lightbg">{{sprite("cross")}}</button>
+    </div> 
 </div>
