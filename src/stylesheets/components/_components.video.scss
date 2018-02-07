@@ -5,8 +5,10 @@
   background-size: cover;
   display: flex;
   justify-content: center;
+  padding: 140px 0;
   @include mq ($from: tablet) {
     background-image: url("../images/video-desktop.png");
+    padding: 275px 0;
   }
 }
 
