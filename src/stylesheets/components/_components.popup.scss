@@ -1,37 +1,12 @@
 .c-popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  background-color: $tundora;
-  &.is-active {
-    display: block;
-  }
-}
-
-.c-popup__wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: $white;
-  box-shadow: 0 0 4px $ebony-clay;
-  padding: 40px 5% 62px 5%;
-  @include mq($from : tablet) {
-    padding: 40px 15% 62px 15%;
-  }
-}
-
-.c-popup__share {
-  margin-top: 31px;
-  display: flex;
-  justify-content: center;
+  padding:40px 180px 62px 180px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .c-popup__btn {
-  position: absolute;
-  top: 16px;
-  right: 10px;
+  position:absolute;
+  top:15px;
+  right:10px;
 }
