@@ -20,6 +20,14 @@
     .c-header__nav {
       color: $white;
     }
+
+    .c-header__btn{
+      &:hover,
+      &:active{
+        background-color:$white;
+        color:$tundora;
+      }
+    }
   }
 }
 
