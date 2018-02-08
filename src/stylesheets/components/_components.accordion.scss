@@ -40,18 +40,20 @@
 
 .c-accordion__list {
   margin-left: $inuit-global-spacing-unit;
-
+  a {
+    text-decoration: none;
+    color: $celery;
+    @include inuit-font-size($font-size-p,$line-height-p);
+    &:hover,
+    &:focus{
+      text-decoration: underline;
+    }
+  }
   &.is-collapsed {
     display: none;
   }
-
   @include mq ($from: tablet) {
     margin-left: 0;
     display: block !important;
   }
-}
-
-.c-accordion__panel_text {
-  color: $celery;
-  @include inuit-font-size($font-size-p,$line-height-p);
 }
