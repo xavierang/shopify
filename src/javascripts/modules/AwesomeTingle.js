@@ -49,7 +49,7 @@ export default class AwesomeTingle {
           </a>
         </div>
 
-        <button class="c-popup__btn  c-icon  c-icon--tiny  c-icon--lightbg">
+        <button class="c-popup__btn  c-icon  c-icon--tiny  c-icon--lightbg"}>
           <span class='sprite -cross '>
             <svg viewBox="0 0 1 1">
               <use xlink:href='images/icons.svg#cross'></use>
