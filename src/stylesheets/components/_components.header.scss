@@ -36,6 +36,7 @@
 .c-header__logo {
   @include mq($from:tablet) {
     margin-right: auto;
+    flex:1;
   }
 }
 
