@@ -60,6 +60,6 @@ export default class AwesomeTingle {
       </div>
     `);
 
-      myTingle.open(); //for testing only
+      // myTingle.open();
   }
 }
