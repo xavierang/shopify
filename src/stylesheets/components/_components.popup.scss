@@ -1,0 +1,23 @@
+.tingle-enabled{
+  width:100%;
+  overflow: visible !important;
+}
+
+.c-popup {
+  padding:0;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  > h1,p {
+    width:100%;
+  }
+  @include mq ($from:tablet){
+    padding:40px 180px 62px 180px;
+  }
+}
+
+.c-popup__btn {
+  position:absolute;
+  top:15px;
+  right:10px;
+}

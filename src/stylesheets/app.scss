@@ -18,6 +18,7 @@
 @import "inuitcss/tools/tools.hidden";
 @import "sass-mq/mq";
 @import "swiper/dist/css/swiper.min";
+@import "tingle.js/dist/tingle.min";
 
 // ==========================================================================||
 //  Generic
@@ -74,6 +75,7 @@
 @import "components/components.logo";
 @import "components/components.swiper";
 @import "components/components.feature";
+@import "components/components.popup";
 @import "components/components.register";
 @import "components/components.signup";
 
