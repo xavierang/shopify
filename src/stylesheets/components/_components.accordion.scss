@@ -1,4 +1,13 @@
-.c-accordion {
+.c-accordion__wrapper {
+  transition:max-height 0.5s;
+  overflow:hidden;
+  max-height:34px;
+  &.is-collapsed{
+    max-height:130px;
+  }
+  @include mq($from:tablet){
+    max-height:130px !important;
+  }
 }
 
 .c-accordion__header {
@@ -13,7 +22,6 @@
   @include mq ($from: tablet) {
     display: none;
   }
-
   &:hover,
   &:focus {
     fill: $celery;
@@ -22,15 +30,6 @@
 
 .c-accordion__list {
   margin-left: $inuit-global-spacing-unit;
-
-  &.is-collapsed {
-    display: none;
-  }
-
-  @include mq ($from: tablet) {
-    margin-left: 0;
-    display: block !important;
-  }
 }
 
 .c-accordion__panel_text {
