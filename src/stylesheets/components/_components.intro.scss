@@ -4,7 +4,9 @@
   background-repeat: no-repeat;
   background-position: left 110%;
   background-size: 220% 75%;
+  padding: 64px 0 220px 0;
   @include mq ($from: tablet) {
+    padding: 95px 0 425px 0;
     background-position: bottom;
     background-size: cover;
   }

@@ -1,20 +1,14 @@
-.c-footer {
-  background-color: $alabaster;
-  padding-top: $inuit-global-spacing-unit;
-  @include mq($from:tablet) {
-    padding-top: 95px;
+.c-footer--top{
+  padding-top:23px;
+  padding-bottom:$inuit-global-spacing-unit-tiny;
+  @include mq($from:tablet){
+    padding-top:95px;
+    padding-bottom: $inuit-global-spacing-unit-huge;
   }
 }
 
 .c-footer--bottom {
-  margin-top: $inuit-global-spacing-unit-tiny;
   background-color: $celery;
-  @include mq ($from: tablet) {
-    margin-top: $inuit-global-spacing-unit-huge;
-  }
-  ul {
-    margin-bottom: 0;
-  }
 }
 
 .c-footer--bottom_item {
@@ -27,5 +21,10 @@
   > a {
     text-decoration: none;
     color: $white;
+    &:hover,
+    &:focus{
+      color:$tundora;
+      text-decoration: underline;
+    }
   }
 }

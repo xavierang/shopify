@@ -1,21 +1,7 @@
 .c-share {
   display: flex;
   position: relative;
-  padding-bottom: 25px;
-  @include mq ($from: tablet) {
-    padding-bottom: 32px;
-  }
   @include inuit-font-size($font-size-p,$line-height-p);
-  &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 1px;
-    background-color: $alto;
-    width: 100%;
-    left: 0;
-    bottom: 0;
-  }
 }
 
 .c-share__items {
