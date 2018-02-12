@@ -34,7 +34,7 @@
 }
 
 .c-header__logo {
-  cursor: pointer !important;
+  cursor: pointer;
   @include mq($from:tablet) {
     margin-right: auto;
   }
