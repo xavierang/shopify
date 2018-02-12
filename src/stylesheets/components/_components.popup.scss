@@ -4,12 +4,15 @@
 }
 
 .c-popup {
-  padding:40px 180px 62px 180px;
+  padding:0;
   display:flex;
   flex-direction: column;
   align-items: center;
-  > * {
+  > h1,p {
     width:100%;
+  }
+  @include mq ($from:tablet){
+    padding:40px 180px 62px 180px;
   }
 }
 
