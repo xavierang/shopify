@@ -1,0 +1,21 @@
+.o-form {
+  margin-top: 33px;
+  display: flex;
+  justify-content: space-between;
+}
+
+//input style with underline
+.o-form__input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid $tundora;
+  opacity: 0.6;
+  margin-right: 18px;
+  flex: 1;
+  line-height: 20px;
+  font-size: 12px;
+  &.is-filled {
+    border-color: $celery;
+  }
+}

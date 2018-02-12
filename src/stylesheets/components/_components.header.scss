@@ -21,11 +21,13 @@
       color: $white;
     }
 
-    .c-header__btn{
+    .c-header__btn {
+      background-color: $celery;
+      color: $alabaster;
       &:hover,
-      &:active{
-        background-color:$white;
-        color:$tundora;
+      &:focus {
+        background-color: $alabaster;
+        color: $tundora;
       }
     }
   }
@@ -42,8 +44,10 @@
 }
 
 .c-header__logo {
+  cursor: pointer;
   @include mq($from:tablet) {
     margin-right: auto;
+    flex:1;
   }
 }
 

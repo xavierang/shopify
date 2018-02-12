@@ -23,7 +23,7 @@
   text-align: center; /* [4] */
   margin: 0; /* [4] */
   cursor: pointer; /* [5] */
-  padding: $inuit-global-spacing-unit-small $inuit-global-spacing-unit;
+  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit;
   transition: $global-transition;
   border-radius: $global-radius;
   border: none;
@@ -71,7 +71,7 @@
      ========================================================================== */
 
 .c-btn--small {
-  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit-small;
+  padding: $inuit-global-spacing-unit-tiny $inuit-global-spacing-unit;
 }
 
 .c-btn--large {
