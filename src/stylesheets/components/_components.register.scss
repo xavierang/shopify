@@ -1,0 +1,29 @@
+.c-register {
+  background-color: $concrete;
+  background-image: url("../images/register.png");
+  background-size: 200%;
+  background-position: 45% 100%;
+  background-repeat: no-repeat;
+  padding: 63px 0 331px 0;
+  @include mq($from: tablet) {
+    background-position: center;
+    background-size: cover;
+    padding: 96px 0 351px 0;
+  }
+}
+
+.c-register__logo {
+  svg {
+    margin: 0 auto 0 auto;
+  }
+}
+
+.c-register__heading {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: $tundora;
+  @include mq($from:tablet) {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+}
