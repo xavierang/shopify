@@ -1,16 +1,16 @@
 .c-menu {
-  display: none;
-  position: absolute;
+  z-index: 10;
+  display: block;
+  position:fixed;
+  left:-100%;
   top: 0;
-  left: 0;
-  min-height: 100vh;
+  bottom:0;
   width: 100%;
   background-color: $black;
   padding: $inuit-global-spacing-unit-large $inuit-global-spacing-unit;
-
+  transition:all 0.5s; 
   &.is-open {
-    display: block;
-    z-index: 1;
+    left:0;
   }
 }
 
