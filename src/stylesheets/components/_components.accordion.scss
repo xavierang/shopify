@@ -18,6 +18,18 @@
     }
   }
 }
+  
+.c-accordion__wrapper {
+  transition:max-height 0.5s;
+  overflow:hidden;
+  max-height:34px;
+  &.is-collapsed{
+    max-height:130px;
+  }
+  @include mq($from:tablet){
+    max-height:130px !important;
+  }
+}
 
 .c-accordion__header {
   display: flex;
@@ -31,7 +43,6 @@
   @include mq ($from: tablet) {
     display: none;
   }
-
   &:hover,
   &:focus {
     fill: $celery;
