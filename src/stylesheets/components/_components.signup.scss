@@ -1,0 +1,16 @@
+.c-signup {
+  background-image: url("../images/signup.png");
+  background-size: 130%;
+  background-position: 55% 85%;
+  background-repeat: no-repeat;
+  padding: 60px 0 375px 0;
+  @include mq($from:tablet) {
+    padding: 173px 0 173px 0;
+    background-size: 45%;
+    background-position: 70% 60%;
+  }
+}
+
+.c-signup__heading {
+  margin-top: 13px;
+}

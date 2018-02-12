@@ -2,21 +2,17 @@
 
 {% extends 'layouts/application.html' %}
 
-{% block content %}
+{% block content %} 
 
-{% include "./shared/menu.html" %}
+{% include "./shared/menu.html" %} 
 {% include "./shared/header.html"%}
-{% include "./shared/hero.html" %}
+{% include "./shared/hero.html" %} 
 {% include "./shared/introduction.html" %}
 {% include "./shared/feature.html" %}
-
-<div class="c-video">
-  <div class="o-panel--video">
-    <button class="c-video__btn  c-icon  c-icon--huge  c-icon--darkbg">{{sprite("play")}}</button>
-  </div>
-</div>
-
-{% include "./shared/footer.html" %}
+{% include "./shared/video.html" %}
+{% include "./shared/signup.html" %}
+{% include "./shared/footer.html" %} 
 
 {% endblock %}
+
 
