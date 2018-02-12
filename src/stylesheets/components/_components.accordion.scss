@@ -1,3 +1,24 @@
+.c-accordion {
+  position:relative;
+  padding-top:43px;
+  @include mq ($from:tablet){
+    padding-top:57px;
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    background-color: $alto;
+    width: 100%;
+    left: 0;
+    top: 24px;
+    @include mq ($from:tablet){
+      top:29px;
+    }
+  }
+}
+  
 .c-accordion__wrapper {
   transition:max-height 0.5s;
   overflow:hidden;
@@ -30,9 +51,20 @@
 
 .c-accordion__list {
   margin-left: $inuit-global-spacing-unit;
-}
-
-.c-accordion__panel_text {
-  color: $celery;
-  @include inuit-font-size($font-size-p,$line-height-p);
+  a {
+    text-decoration: none;
+    color: $celery;
+    @include inuit-font-size($font-size-p,$line-height-p);
+    &:hover,
+    &:focus{
+      text-decoration: underline;
+    }
+  }
+  &.is-collapsed {
+    display: none;
+  }
+  @include mq ($from: tablet) {
+    margin-left: 0;
+    display: block !important;
+  }
 }
