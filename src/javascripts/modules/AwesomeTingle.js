@@ -3,7 +3,6 @@ import tingle from "tingle.js";
 export default class AwesomeTingle {
   constructor(el) {
     this.el = el;
-    console.log(el.textContent, "- From the example module");
 
     const myTingle = new tingle.modal({
       footer: false,
