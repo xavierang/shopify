@@ -2,21 +2,30 @@
   background-color:$tundora;
   background-image: url("../images/hero-desktop.png");
   background-repeat: no-repeat;
-  // background-size:450%;
-  background-size:cover;
-  background-position:65% 300%;
-  padding: 48px 0 400px 0;
+  background-size:450%;
+  background-position:65% bottom;
+  padding: 110px 0 400px 0;
   @include mq($from:tablet) {
-    padding: 72px 0 265px 0;
+    padding: 165px 0 265px 0;
     background-size: cover;
     background-position: center;
   }
 }
 
-.c-hero__text {
-  padding: 128px 21px 0 12px;
-  color: $white;
+.c-hero__content {
+  padding: 0 21px 0 12px;
   @include mq($from:tablet) {
-    padding: 165px 0 0 0;
+    padding: 0;
+  }
+}
+
+.c-hero__text{
+  color: $white;
+}
+
+.c-hero__btn-text{
+  @include inuit-font-size($font-size-p,$line-height-p);
+  @include mq ($from:tablet){
+    @include inuit-font-size($font-size-p--desktop,$line-height-p);
   }
 }
