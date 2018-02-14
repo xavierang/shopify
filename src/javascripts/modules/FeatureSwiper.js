@@ -4,6 +4,10 @@ export default class FeatureSwiper {
   constructor(el) {
     this.el = el;
 
-    const testSwiper = new Swiper(el);
+    const testSwiper = new Swiper(el, {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
   }
 }

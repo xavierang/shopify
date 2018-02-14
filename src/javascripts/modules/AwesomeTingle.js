@@ -20,7 +20,7 @@ export default class AwesomeTingle {
           share on
           </span>
 
-          <a href="#" target="_blank" title="Share on facebook" class="c-share__items  c-icon  c-icon--large  c-icon--lightbg">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=xavierang.github.io/shopify" target="_blank" title="Share on facebook" class="c-share__items  c-icon  c-icon--large  c-icon--lightbg">
             <span class="u-hidden-visually">Share on facebook</span>
             <span class='sprite -facebook '>
               <svg viewBox="0 0 1 1">
@@ -29,7 +29,7 @@ export default class AwesomeTingle {
             </span>
           </a>
 
-          <a href="#" target="_blank" title="Share on twitter" class="c-share__items  c-icon  c-icon--large  c-icon--lightbg">
+          <a href="https://twitter.com/home?status=xavierang.github.io/shopify" target="_blank" title="Share on twitter" class="c-share__items  c-icon  c-icon--large  c-icon--lightbg">
             <span class="u-hidden-visually">Share on twitter</span>
               <span class='sprite -twitter-filled '>
                <svg viewBox="0 0 1 1">
@@ -38,7 +38,7 @@ export default class AwesomeTingle {
               </span>
           </a>
 
-          <a href="#" target="_blank" title="Share on instagram" class="c-share__items  c-icon  c-icon--large  c-icon--lightbg">
+          <a href="https://www.instagram.com/" target="_blank" title="Share on instagram" class="c-share__items  c-icon  c-icon--large  c-icon--lightbg">
             <span class="u-hidden-visually">Share on instagram</span>
               <span class='sprite -instagram '>
                <svg viewBox="0 0 1 1">

@@ -8,9 +8,10 @@
   "dependencies": {
     "blendid": "^4.4.2",
     "inuitcss": "^6.0.0-beta.5",
+    "smooth-scroll": "^12.1.5",
+    "svgxuse": "^1.2.6",
     "swiper": "^4.1.0",
-    "tingle.js": "^0.13.0",
-    "svgxuse": "^1.2.6"
+    "tingle.js": "^0.13.0"
   },
   "devDependencies": {
     "eslint": "^4.9.0",

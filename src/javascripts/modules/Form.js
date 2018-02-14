@@ -1,4 +1,4 @@
-export default class ActiveInput {
+export default class Form {
   constructor(el) {
     this.el = el;
 
