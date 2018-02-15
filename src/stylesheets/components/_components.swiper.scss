@@ -56,7 +56,7 @@ $swiper-height-desktop: 155px;
 
 .c-swiper--desktop {
   display: none;
-  @include mq($from:tablet) {
+  @include mq($from:desktop) {
     display: flex;
     justify-content: space-around;
   }

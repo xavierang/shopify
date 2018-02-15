@@ -2,29 +2,31 @@
     <div class="c-footer--top">
         <div class="o-wrapper">
             <div class="o-layout">
-                <div class="o-layout__item">
+                <div class="o-layout__item u-push-1/12@tablet">
                     {% include "./share.html" %}
                 </div>
             </div>
-
-            {% include "./accordion.html" %}
         </div>
-        
+        {% include "./accordion.html" %}
     </div>
 
     <div class="c-footer--bottom">
         <div class="o-wrapper">
-            <ul class="o-list-inline">
-                <li class="o-list-inline__item c-footer--bottom_item">
-                    <a href="#" target="_blank">About</a>
-                </li>
-                <li class="o-list-inline__item c-footer--bottom_item">
-                    <a href="# " target="_blank">Privacy</a>
-                </li>
-                <li class="o-list-inline__item c-footer--bottom_item">
-                    <a href="# " target="_blank">Terms</a>
-                </li>
-            </ul>
+            <div class="o-layout">
+                <div class="o-layout__item u-push-1/12@tablet">
+                    <ul class="o-list-inline  c-footer--bottom_list">
+                        <li class="o-list-inline__item c-footer--bottom_item">
+                            <a href="#" target="_blank">About</a>
+                        </li>
+                        <li class="o-list-inline__item c-footer--bottom_item">
+                            <a href="# " target="_blank">Privacy</a>
+                        </li>
+                        <li class="o-list-inline__item c-footer--bottom_item">
+                            <a href="# " target="_blank">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </footer>

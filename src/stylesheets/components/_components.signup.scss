@@ -5,8 +5,13 @@
   background-repeat: no-repeat;
   padding: 60px 0 375px 0;
   @include mq($from:tablet) {
+    padding: 150px 0 173px 0;
+    background-size: 65%;
+    background-position: 115% 60%;
+  }
+  @include mq($from:desktop){
     padding: 173px 0 173px 0;
-    background-size: 45%;
+    background-size:45%;
     background-position: 70% 60%;
   }
 }

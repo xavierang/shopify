@@ -16,6 +16,11 @@
     .c-header__logo {
       svg {
         fill: $white;
+
+        &:hover,
+        &:focus {
+          fill: $celery;
+        }
       }
     }
 
@@ -51,23 +56,29 @@
 
 .c-header__logo {
   cursor: pointer;
+  &:hover,
+  &:focus {
+    svg {
+      fill: $celery;
+    }
+  }
+
   @include mq($from:tablet) {
     margin-right: auto;
-    flex: 1;
+    flex: 0;
   }
 }
 
 .c-header__icon {
   fill: $tundora;
-  margin-left: $inuit-global-spacing-unit;
+  padding: 0;
   @include mq($from:tablet) {
     display: none;
   }
 }
 
 .c-header__btn {
-  margin: $inuit-global-spacing-unit;
-  margin-left: 0px;
+  margin: 15px 0;
 }
 
 .c-header__nav {
