@@ -14,6 +14,11 @@
     .c-header__logo {
       svg {
         fill: $white;
+
+        &:hover,
+        &:focus {
+          fill: $celery;
+        }
       }
     }
 
@@ -44,20 +49,23 @@
 }
 
 .c-header__logo {
-  cursor:pointer !important;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    svg {
+      fill: $celery;
+    }
+  }
+
   @include mq($from:tablet) {
     margin-right: auto;
-    flex:0;
-  }
-  &:hover,
-  &:focus{
-    svg{ fill: $celery !important;}
+    flex: 0;
   }
 }
 
 .c-header__icon {
   fill: $tundora;
-  padding:0;
+  padding: 0;
   @include mq($from:tablet) {
     display: none;
   }

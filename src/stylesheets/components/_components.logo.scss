@@ -2,7 +2,6 @@
   vertical-align: middle;
   font: inherit;
   text-align: center;
-  cursor: default;
   transition: $global-transition;
   border: none;
   padding: 0;
@@ -25,7 +24,7 @@
   svg {
     width: 200px;
     height: 50px;
-    @include mq($from:tablet, $until:desktop){
+    @include mq($from:tablet, $until:desktop) {
       width: 150px;
       height: 50px;
     }
