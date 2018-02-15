@@ -1,33 +1,20 @@
 .c-accordion {
-  position:relative;
-  padding-top:43px;
-  @include mq ($from:tablet){
-    padding-top:57px;
-  }
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    height: 1px;
-    background-color: $alto;
-    width: 100%;
-    left: 0;
-    top: 24px;
-    @include mq ($from:tablet){
-      top:29px;
-    }
+  position: relative;
+  padding-top: 43px;
+  @include mq ($from: tablet) {
+    padding-top: 57px;
   }
 }
-  
+
 .c-accordion__wrapper {
-  transition:max-height 0.5s;
-  overflow:hidden;
-  max-height:34px;
-  &.is-collapsed{
-    max-height:130px;
+  transition: max-height 0.5s;
+  overflow: hidden;
+  max-height: 34px;
+  &.is-collapsed {
+    max-height: 130px;
   }
-  @include mq($from:tablet){
-    max-height:130px !important;
+  @include mq($from:tablet) {
+    max-height: 130px;
   }
 }
 
@@ -56,7 +43,7 @@
     color: $celery;
     @include inuit-font-size($font-size-p,$line-height-p);
     &:hover,
-    &:focus{
+    &:focus {
       text-decoration: underline;
     }
   }
@@ -65,6 +52,16 @@
   }
   @include mq ($from: tablet) {
     margin-left: 0;
-    display: block !important;
+    display: block;
+  }
+}
+
+.c-accordion__flexcontainer {
+  border-top: 1px solid $alto;
+  padding-top: 18px;
+  @include mq ($from: tablet) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 27px;
   }
 }

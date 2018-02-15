@@ -1,4 +1,9 @@
+.c-footer{
+  overflow-x: hidden;
+}
+
 .c-footer--top{
+  background-color:$alabaster;
   padding-top:23px;
   padding-bottom:$inuit-global-spacing-unit-tiny;
   @include mq($from:tablet){
@@ -9,6 +14,10 @@
 
 .c-footer--bottom {
   background-color: $celery;
+}
+
+.c-footer--bottom_list {
+  margin-bottom:0;
 }
 
 .c-footer--bottom_item {
