@@ -1,17 +1,31 @@
 .c-video {
   background-image: url("../images/video-mobile.png");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  height: 350px;
   justify-content: center;
-  padding: 140px 0;
+
   @include mq ($from: tablet) {
     background-image: url("../images/video-desktop.png");
-    padding: 275px 0;
+    height: 600px;
   }
 }
 
 .c-video__btn {
   vertical-align: center;
+}
+
+.c-video__video {
+  display: none;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s;
+  width: 100%;
+
+  &.is-playing {
+    display: block;
+    opacity: 1;
+  }
 }

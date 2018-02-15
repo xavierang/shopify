@@ -1,19 +1,18 @@
 import tingle from "tingle.js";
 
 export default class AwesomeTingle {
-  constructor(el) {
-    this.el = el;
-
+  constructor(resp) {
     const myTingle = new tingle.modal({
       footer: false,
       stickyFooter: false,
-      closeMethods: ["overlay", "escape"],
-      closeLabel: "Close",
+      closeMethods: ["overlay", "escape", "button"],
+      closeLabel: "",
     });
 
     myTingle.setContent(`
     <div class="c-popup  u-text-center">
-        <h1>Awesome!</h1>
+        <h1>${resp.result === "error" ? "NOT " : ""}Awesome!</h1>
+        <p>${resp.msg}</p>
         <p>Lorem ipsum dolor sit amet.Consectetur adipiscing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna.</p>
         <div class="c-share">
           <span class="c-share__items">
@@ -47,18 +46,9 @@ export default class AwesomeTingle {
               </span>
           </a>
         </div>
-
-        <button class="c-popup__btn  c-icon  c-icon--tiny  c-icon--lightbg"}>
-          <span class='sprite -cross '>
-            <svg viewBox="0 0 1 1">
-              <use xlink:href='images/icons.svg#cross'></use>
-            </svg>
-           </span>
-        </button>
-
       </div>
     `);
 
-      // myTingle.open();
+    return myTingle;
   }
 }

@@ -4,12 +4,11 @@ export default class ScrollTo {
   constructor(el) {
     this.el = el;
 
-    const option = { speed: 1000, easing: "easeInOutCubic", offset: 94 };
+    const option = { speed: 1000, easing: "easeInOutCubic", offset: 0 };
     const scroll = new SmoothScroll("a, button", option);
 
     this.el.addEventListener("click", e => {
       e.preventDefault();
-      console.dir(this.el.localName);
       if (this.el.localName === "button") {
         const ref = this.el.attributes["data-href"].value;
         switch (ref) {
@@ -25,10 +24,17 @@ export default class ScrollTo {
             break;
           case "video":
             scroll.animateScroll(document.querySelector(".c-video"));
-          case "submit":
             break;
-
+          case "play-video":
+            this.el.classList.add("u-hide");
+            document
+              .querySelector(".c-video__video")
+              .classList.add("is-playing");
+            document.querySelector(".c-video__video").src += "&amp;autoplay=1";
+            break;
           default:
+            // do nothing
+            break;
         }
       } else if (this.el.localName === "a") {
         const ref = this.el.attributes.href.value;
@@ -41,7 +47,9 @@ export default class ScrollTo {
             break;
           case "feature":
             scroll.animateScroll(document.querySelector(".c-swiper"));
+            break;
           default:
+            // do nothing
             break;
         }
 

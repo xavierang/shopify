@@ -1,10 +1,10 @@
 .c-hero {
-  background-color:$tundora;
+  background-color: $tundora;
   background-image: url("../images/hero-desktop.png");
   background-repeat: no-repeat;
   // background-size:450%;
-  background-size:cover;
-  background-position:65% 300%;
+  background-size: cover;
+  background-position: 65% 300%;
   padding: 48px 0 400px 0;
   @include mq($from:tablet) {
     padding: 72px 0 265px 0;
