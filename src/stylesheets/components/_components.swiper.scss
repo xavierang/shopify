@@ -52,6 +52,11 @@ $swiper-height-desktop: 155px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  //fix width of swiper on IE11
+  p {
+    width: 100%;
+  }
 }
 
 .c-swiper--desktop {
