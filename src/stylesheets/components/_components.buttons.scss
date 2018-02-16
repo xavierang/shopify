@@ -17,6 +17,7 @@
  */
 
 .c-btn {
+  outline: none;
   display: inline-block; /* [1] */
   vertical-align: middle; /* [2] */
   @include inuit-font-size($font-size-p,$line-height-p);

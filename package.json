@@ -5,7 +5,12 @@
   "license": "MIT",
   "repository": "git@github.com:xavierang/shopify.git",
   "author": "xavierang <sgtxav@gmail.com>",
+  "scripts": {
+    "start": "serve ./public",
+    "build": "yarn blendid build"
+  },
   "dependencies": {
+    "serve": "latest",
     "ajaxchimp": "^1.3.0",
     "blendid": "^4.4.2",
     "inuitcss": "^6.0.0-beta.5",
