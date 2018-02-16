@@ -1,4 +1,5 @@
 import SmoothScroll from "smooth-scroll";
+import "smooth-scroll/dist/js/smooth-scroll.polyfills";
 
 export default class ScrollTo {
   constructor(el) {
@@ -11,10 +12,13 @@ export default class ScrollTo {
       offset: 0,
 
       before: () => {
+        console.log("start scroll");
         this.currentPageYOffset = window.pageYOffset;
         document.querySelector(".c-header").classList.add("is-locked");
       },
+
       after: () => {
+        console.log(window.pageYOffset, this.currentPageYOffset);
         setTimeout(() => {
           if (window.pageYOffset !== 0) {
             document.querySelector(".c-header").classList.add("is-scroll");

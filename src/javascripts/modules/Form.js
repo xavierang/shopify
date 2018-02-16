@@ -17,7 +17,7 @@ export default class Form {
     });
 
     const url =
-      "http://github.us17.list-manage.com/subscribe/post?u=43373efd1b02bff2a76a8ce96&id=58ed49b77c";
+      "https://github.us17.list-manage.com/subscribe/post?u=43373efd1b02bff2a76a8ce96&id=58ed49b77c";
 
     $(this.el).ajaxChimp({
       url,
