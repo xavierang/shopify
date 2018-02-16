@@ -7,11 +7,12 @@ export default class Form {
   constructor(el) {
     this.el = el;
 
-    this.el.addEventListener("keyup", e => {
+    const input = this.el.querySelector("#email");
+    input.addEventListener("keyup", e => {
       if (e.target.value !== "") {
-        this.el.classList.add("is-filled");
+        input.classList.add("is-filled");
       } else {
-        this.el.classList.remove("is-filled");
+        input.classList.remove("is-filled");
       }
     });
 

@@ -5,8 +5,7 @@ export default class Scroll {
 
     window.addEventListener("scroll", e => {
       const win = e.target.defaultView;
-
-      if (typeof win.pageYOffset === "number" && win.pageYOffset === 0) {
+      if (typeof win.pageYOffset === "number" && win.pageYOffset < 25) {
         // header is at the top of website
         el.classList.add("is-transparent");
         el.classList.remove("is-scroll");

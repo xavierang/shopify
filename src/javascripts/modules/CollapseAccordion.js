@@ -4,15 +4,13 @@ export default class CollapseAccordion {
 
     this.el.addEventListener("click", e => {
       e.preventDefault();
-      this.toggleClass(this.el.parentElement);
+      this.el.parentElement.classList.toggle("is-collapsed");
+      const sprites = Array.from(
+        this.el.querySelectorAll(".c-accordion__icon")
+      );
+      for (const sprite of sprites) {
+        sprite.classList.toggle("u-hide");
+      }
     });
-  }
-
-  toggleClass(t) {
-    t.classList.toggle("is-collapsed");
-    const sprites = t.children[0].children;
-    for (const sprite of sprites) {
-      sprite.classList.toggle("u-hide");
-    }
   }
 }

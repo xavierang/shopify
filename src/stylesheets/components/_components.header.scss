@@ -42,6 +42,10 @@
   &.is-scroll {
     transform: translateY(-100%);
   }
+
+  &.is-locked {
+    transform: translateY(-100%);
+  }
 }
 
 .c-header__wrapper {

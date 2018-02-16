@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 65% 300%;
-  padding: 48px 0 400px 0;
+  padding: 128px 0 400px 0;
   @include mq($from:tablet) {
     padding: 165px 0 265px 0;
     background-size: cover;
@@ -19,13 +19,13 @@
   }
 }
 
-.c-hero__text{
+.c-hero__text {
   color: $white;
 }
 
-.c-hero__btn-text{
+.c-hero__btn-text {
   @include inuit-font-size($font-size-p,$line-height-p);
-  @include mq ($from:tablet){
+  @include mq ($from: tablet) {
     @include inuit-font-size($font-size-p--desktop,$line-height-p);
   }
 }

@@ -3,21 +3,44 @@ import SmoothScroll from "smooth-scroll";
 export default class ScrollTo {
   constructor(el) {
     this.el = el;
+    this.currentPageYOffset = 0;
 
-    const option = { speed: 1000, easing: "easeInOutCubic", offset: 0 };
+    const option = {
+      speed: 1000,
+      easing: "easeInOutCubic",
+      offset: 0,
+
+      before: () => {
+        this.currentPageYOffset = window.pageYOffset;
+        document.querySelector(".c-header").classList.add("is-locked");
+      },
+      after: () => {
+        setTimeout(() => {
+          if (window.pageYOffset !== 0) {
+            document.querySelector(".c-header").classList.add("is-scroll");
+          }
+          document.querySelector(".c-header").classList.remove("is-locked");
+        }, 20);
+      },
+    };
     const scroll = new SmoothScroll("a, button", option);
 
     this.el.addEventListener("click", e => {
       e.preventDefault();
-      if (this.el.localName === "button") {
+      if (this.el.tagName === "BUTTON") {
         const ref = this.el.attributes["data-href"].value;
         switch (ref) {
           case "menu":
             // scroll.animateScroll(document.querySelector(".js-menu"), this.el);
-            document.querySelector(".js-menu").classList.toggle("is-open");
+            document.querySelector(".c-menu").classList.toggle("is-open");
             break;
           case "home":
             scroll.animateScroll(0);
+            if (
+              document.querySelector(".c-menu").classList.contains("is-open")
+            ) {
+              document.querySelector(".c-menu").classList.remove("is-open");
+            }
             break;
           case "signup":
             scroll.animateScroll(document.querySelector(".c-signup"));
@@ -36,10 +59,10 @@ export default class ScrollTo {
             // do nothing
             break;
         }
-      } else if (this.el.localName === "a") {
+      } else if (this.el.tagName === "A") {
         const ref = this.el.attributes.href.value;
-        if (document.querySelector(".js-menu").classList.contains("is-open")) {
-          document.querySelector(".js-menu").classList.remove("is-open");
+        if (document.querySelector(".c-menu").classList.contains("is-open")) {
+          document.querySelector(".c-menu").classList.remove("is-open");
         }
         switch (ref) {
           case "intro":
